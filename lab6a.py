@@ -32,14 +32,12 @@ class Student:
         key_list = list(self.courses.keys())
         value_list = list(self.courses.values())
         passed_list =[]
-
         num = 0
-        
         for grade in value_list:
             if grade > 0.0:
                 passed_list.append(key_list[num])
             num = num +1
-                    
+                                
         return passed_list
         
 
